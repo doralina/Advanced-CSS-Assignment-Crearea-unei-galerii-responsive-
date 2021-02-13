@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery responsive</title>
+    <!DOCTYPE html>
+    <html>
+
+    <style>
+        body {
+            background-color: #e3e3e3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            padding: 10px;
+            align-content: space-around;
+            gap: 30px;
+        }
+        .grid-item {
+            background-color: #71a2da;
+            text-align: center;
+            border-radius: 10px;
+        }
+        img {
+            height: 150px;
+        }
+        .text-item {
+            background-color: white;
+            max-width: 100%;
+            display: block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        @media screen and (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (max-width: 414px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Galery Heading</h3>
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+        <div class="grid-item"><img src="placeholder-image.png"><span class="text-item">Image Title</span></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id justo a nibh tempus ullamcorper. Pellentesque
+        eleifend, mi vel bibendum interdum, velit massa pretium nulla, at consequat nunc arcu id dolor. Suspendisse id
+        molestie turpis. Curabitur eget massa lorem. Mauris aliquam gravida nunc, a consequat felis pharetra eu. Mauris
+        urna
+        magna, sodales vel diam eget, maximus suscipit est. Ut libero nisl, aliquam sed nulla quis, vestibulum accumsan
+        purus. Nunc enim nunc, laoreet interdum cursus eu, vestibulum id erat. Donec hendrerit enim in egestas rutrum.
+        Vestibulum lacus lacus, eleifend sed dolor sit amet, tempus euismod turpis. Maecenas sed diam faucibus, posuere
+        risus ac, feugiat lectus. Quisque at vehicula mi, sit amet blandit dolor.
+
+        Nunc bibendum risus id semper dictum. Nunc a lacus et dui aliquet consequat sed nec turpis. Morbi mattis orci et
+        aliquet mattis. Maecenas molestie odio felis, in mollis est fermentum ullamcorper. Fusce sit amet neque quis
+        nunc
+        consectetur interdum bibendum at erat. Pellentesque quis sagittis massa, ut porttitor sem. Aenean viverra quam
+        nec
+        mollis porttitor. Nunc finibus sed purus sed semper. Nullam sodales interdum sapien. Morbi a auctor neque. Sed
+        eget
+        scelerisque nisi. Cras vitae metus non orci placerat porta ac nec elit. Ut volutpat auctor sapien, sit amet
+        ultricies mi sodales sed. Mauris et nibh ac urna condimentum placerat. Aenean euismod rhoncus ante, a tincidunt
+        lacus convallis et.
+    </p>
+
+</body>
+
+</html>
